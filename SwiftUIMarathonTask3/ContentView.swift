@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         Button(action: {
-            withAnimation(.interpolatingSpring(stiffness: 100, damping: 10), completionCriteria: .logicallyComplete) {
+            withAnimation(.interpolatingSpring(stiffness: 100, damping: 10)) {
                 isAnimated = true
             } completion: {
                 isAnimated = false
